@@ -1,0 +1,95 @@
+nav {
+  position: relative;
+  height: 100%;
+  text-align: left;
+  max-width: 75px;
+  background: #222;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+
+  .title {
+    font-size: 30px;
+    padding: 15px;
+    color: #ffffff;
+    display: block;
+    width: max-content;
+    img {
+      vertical-align: text-top;
+      margin: 0 18px 0 10px;
+    }
+  }
+  &:hover {
+    max-width: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    a {
+      span {
+        opacity: 1;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+      }
+    }
+  }
+  a {
+    display: block;
+    color: #b7b2b2;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 4px solid transparent;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    width: 300px;
+    margin-bottom: -1px;
+    span {
+      opacity: 0;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+    img {
+      vertical-align: middle;
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+    &.active {
+      border-left-color: deepskyblue;
+      color: #fff;
+      background: #000;
+    }
+    &:hover {
+      background: rgba(105, 105, 105, 0.5);
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+  }
+}
+
+.bottom-menu {
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom-menu-top {
+  position: relative;
+}

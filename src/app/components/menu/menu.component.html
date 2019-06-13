@@ -1,0 +1,18 @@
+<nav (window:resize)="onResize($event)">
+
+  <div #topMenu>
+    <span class="title"><img src="../assets/favicon.ico" alt="logo"><span>Profitero</span></span>
+    <a *ngFor="let rout of router | topMenu" routerLinkActive="active" [routerLink]="rout.path">
+      <img [src]="rout.data.img" [alt]="rout.data.name">
+      <span>{{rout.data.name}}</span>
+    </a>
+  </div>
+
+  <div #bottomMenu class="bottom-menu" [ngClass]="{'bottom-menu-top': resizeMenu}">
+    <a *ngFor="let rout of router | bottomMenu" routerLinkActive="active" [routerLink]="rout.path">
+      <img [src]="rout.data.img" [alt]="rout.data.name">
+      <span>{{rout.data.name}}</span>
+    </a>
+  </div>
+
+</nav>

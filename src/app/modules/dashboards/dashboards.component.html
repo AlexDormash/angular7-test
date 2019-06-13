@@ -1,0 +1,8 @@
+<p>
+  dashboards works!
+</p>
+<p>Setting Value: {{subjectData}}</p>
+<br>
+<input type="text" [(ngModel)]="testData" (input)="changeValue($event)">
+<button (click)="sendMessage()">Send Message</button>
+<p>{{testData}}</p>
